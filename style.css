@@ -521,7 +521,7 @@ section {
 		position: fixed;
 		right: -1000px;
 		visibility: hidden;
-		width: 290px;
+		width: 70%;
 		height: 100%;
 		top: 0;
 		overflow-y: auto;
