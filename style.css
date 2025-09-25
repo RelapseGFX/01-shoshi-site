@@ -1753,6 +1753,13 @@ input {
 	padding-top: 80px;
 }
 
+
+@media (max-width: 1000px) {
+	.contact__wrapper iframe {
+	width: 100%;
+}
+}
+
 @media (min-width: 617px) {
 
 	.contact__form {
