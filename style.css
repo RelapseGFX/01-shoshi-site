@@ -255,6 +255,22 @@ body {
 	font-weight: var(--fw-700);
 }
 
+.btn--primary a {
+	text-align: center;
+	margin-inline: auto;
+
+	i {
+		display: block;
+  		line-height: 0;
+
+		img {
+			text-align: center;
+			margin-inline: auto;
+			margin-bottom: 2em;
+		}
+	}
+}
+
 .btn--primary:hover,
 .btn--primary:focus {
   background: var(--clr-neutral-500);
