@@ -168,6 +168,7 @@ img {
 body {
 	font-family: var(--ff-body);
 	color: var(--clr-neutral-500);
+	overflow-x: hidden;
   }
   
   h1,
