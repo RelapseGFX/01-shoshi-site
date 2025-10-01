@@ -231,7 +231,6 @@ button,
   appearance: none;
   display: inline-block;
   width: auto;
-  max-width: max-content;
   background: none;
   border: 0;
   padding: 0;
