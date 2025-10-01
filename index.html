@@ -568,20 +568,20 @@
           <p>Willst du, dass dein Zuhause frisch und sauber ist? Melde dich, wir regeln den Rest locker, freundlich und umweltbewusst!﻿</p>
         </div>
         <div class="contact__wrapper">
-          <div class="contact__form">
-            <input type="text" placeholder="Full name">
-            <input type="text" placeholder="Phone number">
+          <form name="contact" method="POST" data-netlify="true" onSubmit="submit" class="contact__form">
+            <input type="text" placeholder="Full name" name="name">
+            <input type="text" placeholder="Phone number" name="number">
             <select id="fruit" name="fruit">
               <option value=""><img src="/assets/arrow__down.svg" alt="">Art der Reinigung</option>
               <option value="apple">Grundreinigung</option>
               <option value="banana">Standardreinigung</option>
               <option value="orange">Tiefenreinigung</option>
             </select>
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Area, m²">
+            <input type="text" placeholder="Email" name="Email">
+            <input type="text" placeholder="Area, m²" name="Area">
             
             
-          </div>
+          </form>
           <div class="btn btn--primary">
             <i><img src="/assets/button_arrow.svg" alt=""></i>
             <span>kontakt
