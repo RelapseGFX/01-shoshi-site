@@ -574,8 +574,28 @@
           >
             <input class="d-none dissapear" name="bot-field">
             <div class="contact__parts">
-              <input type="text" placeholder="Full name" name="name" inputmode="text" pattern="[A-Za-z\s]+" minlength="2" maxlength="50" autocomplete="name" required  >
-              <input type="text" placeholder="Phone number" name="number"  inputmode="numeric" min="0" max="120" step="1" required >
+              <input 
+                type="text"
+                placeholder="Full name"
+                name="name" inputmode="text"
+                title="Please enter your name"
+                onkeydown="return /[a-zA-Z ]/i.test(event.key)"
+                placeholder="Emri juaj"
+                required 
+              >
+              <input
+               type="text"
+                placeholder="Phone number"
+                name="number"
+                onkeydown="
+                  return (
+                    /[0-9]/.test(event.key) ||          // allow digits
+                    ['Backspace','Delete','Tab','Enter','ArrowLeft','ArrowRight','Home','End'].includes(event.key)
+                  );
+                " 
+                placeholder="Emri juaj"
+                required 
+              >
               <select id="fruit" name="fruit">
                 <option value=""><img src="/assets/arrow__down.svg" alt="">Art der Reinigung</option>
                 <option value="apple">Grundreinigung</option>
