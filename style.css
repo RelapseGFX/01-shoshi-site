@@ -1786,6 +1786,10 @@ input {
 	width: 100%;
 }
 
+.dissapear {
+	display: none;
+}
+
 .contact__wrapper, .contact__form {
 	display: grid;
 	grid-auto-flow: row;
